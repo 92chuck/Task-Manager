@@ -1,27 +1,39 @@
-# TaskManager
+# Task Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+<em>Simple CRUD operation task manager built with Angular</em>
 
-## Development server
+## About Task Manager
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+View all tasks, create a new task, update reminder for each task, and delete task!
 
-## Code scaffolding
+## Video walkthrough :movie_camera:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Key Features :key:
 
-## Build
+- View all tasks
+- Create a new task
+- Update reminder for each task
+- Delete task!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tech Stack :books:
 
-## Running unit tests
+Below is a non-exhaustive list of technologies used throughout the project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+| Front End | Back End | APIs | Libraries/Frameworks |
+| :-------: | :------: | :--: | :------------------: |
+|  Angular  | JSON Server  |      |      Bootstrap5      |
+|   HTML    |              |      |
+|   CSS     |              |      |
 
-## Running end-to-end tests
+## Setup :rocket:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If you want to explore with Task Manager, feel free to clone this repo! After cloning, please enter the following commands:
 
-## Further help
+- npm server
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Open another terminal
+
+- npm start
+
+Runs the app in the development mode.
+- Open [http://localhost:4200] to view it in your browser.
