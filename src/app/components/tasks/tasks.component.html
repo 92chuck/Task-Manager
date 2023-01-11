@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+  <div class="top col-10">
+    <h1 class="fw-bold">Task Manager</h1>
+    <app-button
+      text="{{ showAddTask ? 'Close' : '+ New Task' }}"
+      (btnClick)="toggleAddTask()"
+    ></app-button>
+  </div>
+</div>
+<app-add-task (onAddTask)="addTask($event)"> </app-add-task>
+<div class="row justify-content-center">
+  <div class="col-10">
+    <input
+      type="text"
+      class="form-control mb-3"
+      placeholder="Search tasks.."
+      [(ngModel)]="searchText"
+    />
+    <app-task-item
+      *ngFor="let task of tasks | search : searchText"
+      [task]="task"
+      (onDeleteTask)="deleteTask(task)"
+      (onToggleReminder)="toggleReminder(task)"
+    ></app-task-item>
+  </div>
+</div>

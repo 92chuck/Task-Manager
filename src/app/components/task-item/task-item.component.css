@@ -1,0 +1,14 @@
+.card {
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.card.reminder {
+  border-left: 10px solid green;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

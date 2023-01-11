@@ -1,0 +1,58 @@
+<div *ngIf="showAddTask" class="px-2 py-2 text-center">
+  <h1 class="display-5 fw-bold">Add New Task</h1>
+  <div class="col lg-6 mx-auto">
+    <p class="lead">Create a new task and keep tracking it!</p>
+  </div>
+</div>
+<div *ngIf="showAddTask" class="row justify-content-center">
+  <div class="col-10">
+    <form [formGroup]="addForm">
+      <div class="row g-3">
+        <div class="col-12">
+          <label class="form-label">Task</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="text"
+            placeholder="@ title"
+          />
+          <span *ngIf="addForm.get('text')?.errors?.['required']"
+            >Task is a required field</span
+          >
+        </div>
+        <div class="col-12">
+          <label class="form-label">Day & Time</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="day"
+            placeholder="@ Jan 1st at 01:00am"
+          />
+          <span *ngIf="addForm.get('day')?.errors?.['required']"
+            >Day & Time is a required field</span
+          >
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              formControlName="reminder"
+              id="checkbox"
+            />
+            <label class="form-check-label" for="checkbox">
+              Set Reminder
+            </label>
+          </div>
+        </div>
+        <div class="col-12 my-5">
+          <app-button
+            text="Submit"
+            (btnClick)="onSubmit()"
+            class="submitBtn"
+          ></app-button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
