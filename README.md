@@ -19,21 +19,22 @@ View all tasks, create a new task, update reminder for each task, and delete tas
 
 Below is a non-exhaustive list of technologies used throughout the project.
 
-| Front End | Back End | APIs | Libraries/Frameworks |
-| :-------: | :------: | :--: | :------------------: |
-|  Angular  | JSON Server  |      |      Bootstrap5      |
-|   HTML    |              |      |
-|   CSS     |              |      |
+| Front End |  Back End   | APIs | Libraries/Frameworks |
+| :-------: | :---------: | :--: | :------------------: |
+|  Angular  | JSON Server |      |      Bootstrap5      |
+|   HTML    |             |      |
+|    CSS    |             |      |
 
 ## Setup :rocket:
 
 If you want to explore with Task Manager, feel free to clone this repo! After cloning, please enter the following commands:
 
-- npm server
+- npm run server
 
 Open another terminal
 
 - npm start
 
 Runs the app in the development mode.
+
 - Open [http://localhost:4200] to view it in your browser.
