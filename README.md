@@ -6,8 +6,6 @@
 
 View all tasks, create a new task, update reminder for each task, and delete task!
 
-## Video walkthrough :movie_camera:
-
 ## Key Features :key:
 
 - View all tasks
